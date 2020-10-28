@@ -1,0 +1,23 @@
+/* Robot .GIF from pinterest https://i.pinimg.com/originals/21/3c/c4/213cc4b2e994aa3a5687fd1dc1695853.gif */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #177EE6;
+}
+
+.container {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./Podi.gif');
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
