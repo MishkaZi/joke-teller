@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  background: #177EE6;
+  background: #177ee6;
 }
 
 .container {
@@ -20,4 +20,43 @@ body {
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: #EAEFF4;
+  background-color: #45484C;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+  filter: brightness(90%);
+}
+
+button:active{
+  transform: scale(0.90);
+}
+
+button:disabled{
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* Media query: Tablet or amsaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  button{
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
 }
